@@ -1,0 +1,15 @@
+{
+    "mplab.clangd.compileCommandsDir": "${workspaceFolder}\\_build\\IOT_NODE_4P\\default",
+    "mplab.clangd.arguments": [
+        "--header-insertion=never"
+    ],
+    "mplab.clangd.path": "c:\\Program Files\\Microchip\\xc32\\v5.10\\bin\\xc32-clangd.exe",
+    "cmake.sourceDirectory": "C:/Users/jakub/Desktop/IoT_4P/IOT_NODE_4P/cmake/IOT_NODE_4P/default",
+    "memory-inspector.debugTypes": [
+        "arm-debugger",
+        "embedded-debug",
+        "gdb",
+        "gdbtarget",
+        "mplab-core-da"
+    ]
+}

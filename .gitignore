@@ -1,7 +1,10 @@
 .generated_files
 
 build/
+_build/
 dist/
+out/
+cmake/
 nbproject/private/
 
 *.o

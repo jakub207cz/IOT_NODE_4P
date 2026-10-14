@@ -21,10 +21,16 @@
                 }
             ],
             "fileSet": "default",
-            "toolchain": "default-XC32"
+            "toolchain": "default-XC32",
+            "userVariables": "default-uservariables"
         }
     ],
     "propertyGroups": [
+        {
+            "name": "default-uservariables",
+            "type": "uservariables",
+            "properties": {}
+        },
         {
             "name": "default-XC32",
             "type": "toolchain",
@@ -34,7 +40,10 @@
         {
             "name": "default-tool-base",
             "type": "tool",
-            "properties": {}
+            "properties": {
+                "poweroptions.powerenable": true,
+                "voltagevalue": "3.3"
+            }
         }
     ],
     "fileSets": [
