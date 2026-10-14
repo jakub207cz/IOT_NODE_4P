@@ -1,0 +1,13 @@
+configVersion: 1.0.0
+coreVersion: 5.9.1
+spaHostVersion: 1.3.0
+device: PIC32CM5164JH01048
+deviceLibrary: {}
+groupModules: []
+modules:
+- cmsis
+- core
+- dfp
+- evsys
+- nvmctrl
+generatedFileHashHistoryMap: []
