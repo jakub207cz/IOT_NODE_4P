@@ -61,7 +61,18 @@ data:
         type: DirectCapability
       type: Attachments
     type: sercom1
-  elementPosition: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: sercom1
+          x: '283'
+          y: '113'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
   symbols:
     I2CM_ADDR_SIZE:
       attributes:

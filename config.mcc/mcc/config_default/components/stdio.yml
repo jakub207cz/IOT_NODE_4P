@@ -37,7 +37,18 @@ data:
         type: DirectDependency
       type: Attachments
     type: stdio
-  elementPosition: {}
+  elementPosition:
+    attributes:
+      id: __ROOTVIEW
+    children:
+    - children:
+      - attributes:
+          id: stdio
+          x: '506'
+          y: '116'
+        type: ElementPosition
+      type: ElementPositions
+    type: ComponentGraph
   symbols:
     DEBUG_PERIPHERAL:
       attributes:

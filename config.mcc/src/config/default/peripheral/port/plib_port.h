@@ -81,6 +81,27 @@
 #define SCL_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 9U)) & 0x01U)
 #define SCL_PIN                  PORT_PIN_PA09
 
+/*** Macros for MOSI pin ***/
+#define MOSI_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 12U)) & 0x01U)
+#define MOSI_PIN                  PORT_PIN_PA12
+
+/*** Macros for SCK pin ***/
+#define SCK_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 13U)) & 0x01U)
+#define SCK_PIN                  PORT_PIN_PA13
+
+/*** Macros for EEPROM_CS pin ***/
+#define EEPROM_CS_Set()               (PORT_REGS->GROUP[0].PORT_OUTSET = ((uint32_t)1U << 14U))
+#define EEPROM_CS_Clear()             (PORT_REGS->GROUP[0].PORT_OUTCLR = ((uint32_t)1U << 14U))
+#define EEPROM_CS_Toggle()            (PORT_REGS->GROUP[0].PORT_OUTTGL = ((uint32_t)1U << 14U))
+#define EEPROM_CS_OutputEnable()      (PORT_REGS->GROUP[0].PORT_DIRSET = ((uint32_t)1U << 14U))
+#define EEPROM_CS_InputEnable()       (PORT_REGS->GROUP[0].PORT_DIRCLR = ((uint32_t)1U << 14U))
+#define EEPROM_CS_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 14U)) & 0x01U)
+#define EEPROM_CS_PIN                  PORT_PIN_PA14
+
+/*** Macros for MISO pin ***/
+#define MISO_Get()               (((PORT_REGS->GROUP[0].PORT_IN >> 15U)) & 0x01U)
+#define MISO_PIN                  PORT_PIN_PA15
+
 // *****************************************************************************
 /* PORT Group
 

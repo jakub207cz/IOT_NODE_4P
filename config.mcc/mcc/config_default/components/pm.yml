@@ -1,0 +1,40 @@
+configVersion: 1.0.0
+componentName: pm
+coreVersion: 5.9.1
+device: PIC32CM5164JH01048
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: pm
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    PM_IDLE_OPTION:
+      attributes:
+        id: PM_IDLE_OPTION
+        label: Idle Mode Configuration
+      type: KeyValueSet
+    PM_INSTANCE_NAME:
+      attributes:
+        id: PM_INSTANCE_NAME
+        label: PM_INSTANCE_NAME
+      type: String
+    PM_STDBYCFG_BBIASHS:
+      attributes:
+        id: PM_STDBYCFG_BBIASHS
+        label: Put RAM in low power during standby mode
+      type: Boolean
+    PM_STDBYCFG_VREGSMOD:
+      attributes:
+        id: PM_STDBYCFG_VREGSMOD
+        label: Voltage Regulator operation in Standby mode
+      type: KeyValueSet
+  userData: {}

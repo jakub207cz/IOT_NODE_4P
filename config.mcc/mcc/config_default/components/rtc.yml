@@ -1,0 +1,666 @@
+configVersion: 1.0.0
+componentName: rtc
+coreVersion: 5.9.1
+device: PIC32CM5164JH01048
+library: []
+dependency:
+- dependencyPackage: class com.microchip.mcc.harmony.HarmonyModule
+  name: rtc
+  type: module
+  version: ''
+- dependencyPackage: ''
+  name: csp
+  type: package
+  version: v3.26.0
+customDataClassName: com.microchip.utils_mh3.utils.persistence.CustomModuleData
+data:
+  attachments: {}
+  elementPosition: {}
+  symbols:
+    RTC_CLOCKSYNC_ENABLE:
+      attributes:
+        id: RTC_CLOCKSYNC_ENABLE
+        label: RTC Clock Sync Enable
+      type: Boolean
+    RTC_COUNTSYNC_ENABLE:
+      attributes:
+        id: RTC_COUNTSYNC_ENABLE
+        label: RTC Count Sync Enable
+      type: Boolean
+    RTC_FREQCORR:
+      attributes:
+        id: RTC_FREQCORR
+        label: Generate Frequency Correction API
+      type: Boolean
+    RTC_INSTANCE_NAME:
+      attributes:
+        id: RTC_INSTANCE_NAME
+        label: RTC_INSTANCE_NAME
+      type: String
+    RTC_MODE0_0:
+      attributes:
+        id: RTC_MODE0_0
+        label: RTC_MODE0_0
+      type: String
+    RTC_MODE0_1:
+      attributes:
+        id: RTC_MODE0_1
+        label: RTC_MODE0_1
+      type: String
+    RTC_MODE0_2:
+      attributes:
+        id: RTC_MODE0_2
+        label: RTC_MODE0_2
+      type: String
+    RTC_MODE0_3:
+      attributes:
+        id: RTC_MODE0_3
+        label: RTC_MODE0_3
+      type: String
+    RTC_MODE0_4:
+      attributes:
+        id: RTC_MODE0_4
+        label: RTC_MODE0_4
+      type: String
+    RTC_MODE0_5:
+      attributes:
+        id: RTC_MODE0_5
+        label: RTC_MODE0_5
+      type: String
+    RTC_MODE0_6:
+      attributes:
+        id: RTC_MODE0_6
+        label: RTC_MODE0_6
+      type: String
+    RTC_MODE0_7:
+      attributes:
+        id: RTC_MODE0_7
+        label: RTC_MODE0_7
+      type: String
+    RTC_MODE0_8:
+      attributes:
+        id: RTC_MODE0_8
+        label: RTC_MODE0_8
+      type: String
+    RTC_MODE0_9:
+      attributes:
+        id: RTC_MODE0_9
+        label: RTC_MODE0_9
+      type: String
+    RTC_MODE0_COMPARE_REGISTER_NAME:
+      attributes:
+        id: RTC_MODE0_COMPARE_REGISTER_NAME
+        label: RTC_MODE0_COMPARE_REGISTER_NAME
+      type: String
+    RTC_MODE0_EVCTRL_CMPEO0_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_CMPEO0_ENABLE
+        label: Compare 0 Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_OVFEO_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_OVFEO_ENABLE
+        label: Overflow Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PERDEO_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PERDEO_ENABLE
+        label: Periodic Interval Daily Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PEREO0_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PEREO0_ENABLE
+        label: Periodic Interval 0 Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PEREO1_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PEREO1_ENABLE
+        label: Periodic Interval 1 Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PEREO2_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PEREO2_ENABLE
+        label: Periodic Interval 2 Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PEREO3_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PEREO3_ENABLE
+        label: Periodic Interval 3 Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PEREO4_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PEREO4_ENABLE
+        label: Periodic Interval 4 Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PEREO5_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PEREO5_ENABLE
+        label: Periodic Interval 5 Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PEREO6_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PEREO6_ENABLE
+        label: Periodic Interval 6 Event Output Enable
+      type: Boolean
+    RTC_MODE0_EVCTRL_PEREO7_ENABLE:
+      attributes:
+        id: RTC_MODE0_EVCTRL_PEREO7_ENABLE
+        label: Periodic Interval 7 Event Output Enable
+      type: Boolean
+    RTC_MODE0_INT:
+      attributes:
+        id: RTC_MODE0_INT
+        label: RTC_MODE0_INT
+      type: Integer
+    RTC_MODE0_INTENSET_CMP0_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_CMP0_ENABLE
+        label: Compare 0 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_OVF_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_OVF_ENABLE
+        label: Overflow Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_PER0_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_PER0_ENABLE
+        label: Periodic Interval 0 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_PER1_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_PER1_ENABLE
+        label: Periodic Interval 1 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_PER2_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_PER2_ENABLE
+        label: Periodic Interval 2 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_PER3_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_PER3_ENABLE
+        label: Periodic Interval 3 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_PER4_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_PER4_ENABLE
+        label: Periodic Interval 4 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_PER5_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_PER5_ENABLE
+        label: Periodic Interval 5 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_PER6_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_PER6_ENABLE
+        label: Periodic Interval 6 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTENSET_PER7_ENABLE:
+      attributes:
+        id: RTC_MODE0_INTENSET_PER7_ENABLE
+        label: Periodic Interval 7 Interrupt Enable
+      type: Boolean
+    RTC_MODE0_INTERRUPT:
+      attributes:
+        id: RTC_MODE0_INTERRUPT
+        label: Enable Interrupts ?
+      type: Boolean
+    RTC_MODE0_MATCHCLR:
+      attributes:
+        id: RTC_MODE0_MATCHCLR
+        label: Clear on compare Match
+      children:
+      - children:
+        - attributes:
+            value: 'true'
+          type: User
+        type: Values
+      type: Boolean
+    RTC_MODE0_NUM_COMP:
+      attributes:
+        id: RTC_MODE0_NUM_COMP
+        label: RTC_MODE0_NUM_COMP
+      type: Integer
+    RTC_MODE0_PRESCALER:
+      attributes:
+        id: RTC_MODE0_PRESCALER
+        label: RTC Prescaler
+      type: KeyValueSet
+    RTC_MODE0_TIMER_COMPARE:
+      attributes:
+        id: RTC_MODE0_TIMER_COMPARE
+        label: Compare Value
+      type: Hex
+    RTC_MODE1_0:
+      attributes:
+        id: RTC_MODE1_0
+        label: RTC_MODE1_0
+      type: String
+    RTC_MODE1_1:
+      attributes:
+        id: RTC_MODE1_1
+        label: RTC_MODE1_1
+      type: String
+    RTC_MODE1_10:
+      attributes:
+        id: RTC_MODE1_10
+        label: RTC_MODE1_10
+      type: String
+    RTC_MODE1_2:
+      attributes:
+        id: RTC_MODE1_2
+        label: RTC_MODE1_2
+      type: String
+    RTC_MODE1_3:
+      attributes:
+        id: RTC_MODE1_3
+        label: RTC_MODE1_3
+      type: String
+    RTC_MODE1_4:
+      attributes:
+        id: RTC_MODE1_4
+        label: RTC_MODE1_4
+      type: String
+    RTC_MODE1_5:
+      attributes:
+        id: RTC_MODE1_5
+        label: RTC_MODE1_5
+      type: String
+    RTC_MODE1_6:
+      attributes:
+        id: RTC_MODE1_6
+        label: RTC_MODE1_6
+      type: String
+    RTC_MODE1_7:
+      attributes:
+        id: RTC_MODE1_7
+        label: RTC_MODE1_7
+      type: String
+    RTC_MODE1_8:
+      attributes:
+        id: RTC_MODE1_8
+        label: RTC_MODE1_8
+      type: String
+    RTC_MODE1_9:
+      attributes:
+        id: RTC_MODE1_9
+        label: RTC_MODE1_9
+      type: String
+    RTC_MODE1_COMPARE0_MATCH_VALUE:
+      attributes:
+        id: RTC_MODE1_COMPARE0_MATCH_VALUE
+        label: Compare 0 Value
+      type: Hex
+    RTC_MODE1_COMPARE1_MATCH_VALUE:
+      attributes:
+        id: RTC_MODE1_COMPARE1_MATCH_VALUE
+        label: Compare 1 Value
+      type: Hex
+    RTC_MODE1_EVCTRL_CMPEO0_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_CMPEO0_ENABLE
+        label: Compare 0 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_CMPEO1_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_CMPEO1_ENABLE
+        label: Compare 1 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_OVFEO_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_OVFEO_ENABLE
+        label: Overflow Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PERDEO_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PERDEO_ENABLE
+        label: Periodic Interval Daily Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PEREO0_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PEREO0_ENABLE
+        label: Periodic Interval 0 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PEREO1_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PEREO1_ENABLE
+        label: Periodic Interval 1 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PEREO2_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PEREO2_ENABLE
+        label: Periodic Interval 2 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PEREO3_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PEREO3_ENABLE
+        label: Periodic Interval 3 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PEREO4_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PEREO4_ENABLE
+        label: Periodic Interval 4 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PEREO5_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PEREO5_ENABLE
+        label: Periodic Interval 5 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PEREO6_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PEREO6_ENABLE
+        label: Periodic Interval 6 Event Output Enable
+      type: Boolean
+    RTC_MODE1_EVCTRL_PEREO7_ENABLE:
+      attributes:
+        id: RTC_MODE1_EVCTRL_PEREO7_ENABLE
+        label: Periodic Interval 7 Event Output Enable
+      type: Boolean
+    RTC_MODE1_INT:
+      attributes:
+        id: RTC_MODE1_INT
+        label: RTC_MODE1_INT
+      type: Integer
+    RTC_MODE1_INTENSET_CMP0_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_CMP0_ENABLE
+        label: Compare 0 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_CMP1_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_CMP1_ENABLE
+        label: Compare 1 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_OVF_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_OVF_ENABLE
+        label: Overflow Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_PER0_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_PER0_ENABLE
+        label: Periodic Interval 0 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_PER1_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_PER1_ENABLE
+        label: Periodic Interval 1 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_PER2_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_PER2_ENABLE
+        label: Periodic Interval 2 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_PER3_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_PER3_ENABLE
+        label: Periodic Interval 3 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_PER4_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_PER4_ENABLE
+        label: Periodic Interval 4 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_PER5_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_PER5_ENABLE
+        label: Periodic Interval 5 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_PER6_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_PER6_ENABLE
+        label: Periodic Interval 6 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTENSET_PER7_ENABLE:
+      attributes:
+        id: RTC_MODE1_INTENSET_PER7_ENABLE
+        label: Periodic Interval 7 Interrupt Enable
+      type: Boolean
+    RTC_MODE1_INTERRUPT:
+      attributes:
+        id: RTC_MODE1_INTERRUPT
+        label: Enable Interrupts ?
+      type: Boolean
+    RTC_MODE1_NUM_COMP:
+      attributes:
+        id: RTC_MODE1_NUM_COMP
+        label: RTC_MODE1_NUM_COMP
+      type: Integer
+    RTC_MODE1_PRESCALER:
+      attributes:
+        id: RTC_MODE1_PRESCALER
+        label: RTC Prescaler
+      type: KeyValueSet
+    RTC_MODE1_TIMER_COUNTER_PERIOD:
+      attributes:
+        id: RTC_MODE1_TIMER_COUNTER_PERIOD
+        label: 16-bit Timer Period
+      type: Hex
+    RTC_MODE2_0:
+      attributes:
+        id: RTC_MODE2_0
+        label: RTC_MODE2_0
+      type: String
+    RTC_MODE2_1:
+      attributes:
+        id: RTC_MODE2_1
+        label: RTC_MODE2_1
+      type: String
+    RTC_MODE2_2:
+      attributes:
+        id: RTC_MODE2_2
+        label: RTC_MODE2_2
+      type: String
+    RTC_MODE2_3:
+      attributes:
+        id: RTC_MODE2_3
+        label: RTC_MODE2_3
+      type: String
+    RTC_MODE2_4:
+      attributes:
+        id: RTC_MODE2_4
+        label: RTC_MODE2_4
+      type: String
+    RTC_MODE2_5:
+      attributes:
+        id: RTC_MODE2_5
+        label: RTC_MODE2_5
+      type: String
+    RTC_MODE2_6:
+      attributes:
+        id: RTC_MODE2_6
+        label: RTC_MODE2_6
+      type: String
+    RTC_MODE2_7:
+      attributes:
+        id: RTC_MODE2_7
+        label: RTC_MODE2_7
+      type: String
+    RTC_MODE2_8:
+      attributes:
+        id: RTC_MODE2_8
+        label: RTC_MODE2_8
+      type: String
+    RTC_MODE2_9:
+      attributes:
+        id: RTC_MODE2_9
+        label: RTC_MODE2_9
+      type: String
+    RTC_MODE2_ALARM_REGISTER_NAME:
+      attributes:
+        id: RTC_MODE2_ALARM_REGISTER_NAME
+        label: RTC_MODE2_ALARM_REGISTER_NAME
+      type: String
+    RTC_MODE2_ALARM_REG_DEF_TYPE:
+      attributes:
+        id: RTC_MODE2_ALARM_REG_DEF_TYPE
+        label: RTC_MODE2_ALARM_REG_DEF_TYPE
+      type: String
+    RTC_MODE2_CLOCK_HOUR_MASK_NAME:
+      attributes:
+        id: RTC_MODE2_CLOCK_HOUR_MASK_NAME
+        label: RTC_MODE2_CLOCK_HOUR_MASK_NAME
+      type: String
+    RTC_MODE2_DISABLE_RTC_RESET:
+      attributes:
+        id: RTC_MODE2_DISABLE_RTC_RESET
+        label: Disable RTC Reset
+      type: Boolean
+    RTC_MODE2_EVCTRL_ALARMEO0_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_ALARMEO0_ENABLE
+        label: Alarm 0 Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_OVFEO_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_OVFEO_ENABLE
+        label: Overflow Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PERDEO_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PERDEO_ENABLE
+        label: Periodic Interval Daily Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PEREO0_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PEREO0_ENABLE
+        label: Periodic Interval 0 Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PEREO1_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PEREO1_ENABLE
+        label: Periodic Interval 1 Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PEREO2_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PEREO2_ENABLE
+        label: Periodic Interval 2 Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PEREO3_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PEREO3_ENABLE
+        label: Periodic Interval 3 Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PEREO4_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PEREO4_ENABLE
+        label: Periodic Interval 4 Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PEREO5_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PEREO5_ENABLE
+        label: Periodic Interval 5 Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PEREO6_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PEREO6_ENABLE
+        label: Periodic Interval 6 Event Output Enable
+      type: Boolean
+    RTC_MODE2_EVCTRL_PEREO7_ENABLE:
+      attributes:
+        id: RTC_MODE2_EVCTRL_PEREO7_ENABLE
+        label: Periodic Interval 7 Event Output Enable
+      type: Boolean
+    RTC_MODE2_INT:
+      attributes:
+        id: RTC_MODE2_INT
+        label: RTC_MODE2_INT
+      type: Integer
+    RTC_MODE2_INTENSET_ALARM0_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_ALARM0_ENABLE
+        label: Alarm 0 Interrupt Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_OVF_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_OVF_ENABLE
+        label: Overflow Interrupt Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_PER0_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_PER0_ENABLE
+        label: Periodic Interval 0 Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_PER1_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_PER1_ENABLE
+        label: Periodic Interval 1 Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_PER2_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_PER2_ENABLE
+        label: Periodic Interval 2 Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_PER3_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_PER3_ENABLE
+        label: Periodic Interval 3 Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_PER4_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_PER4_ENABLE
+        label: Periodic Interval 4 Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_PER5_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_PER5_ENABLE
+        label: Periodic Interval 5 Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_PER6_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_PER6_ENABLE
+        label: Periodic Interval 6 Enable
+      type: Boolean
+    RTC_MODE2_INTENSET_PER7_ENABLE:
+      attributes:
+        id: RTC_MODE2_INTENSET_PER7_ENABLE
+        label: Periodic Interval 7 Enable
+      type: Boolean
+    RTC_MODE2_INTERRUPT:
+      attributes:
+        id: RTC_MODE2_INTERRUPT
+        label: Enable Interrupts?
+      type: Boolean
+    RTC_MODE2_MASK_REGISTER_NAME:
+      attributes:
+        id: RTC_MODE2_MASK_REGISTER_NAME
+        label: RTC_MODE2_MASK_REGISTER_NAME
+      type: String
+    RTC_MODE2_NUM_ALARM:
+      attributes:
+        id: RTC_MODE2_NUM_ALARM
+        label: RTC_MODE2_NUM_ALARM
+      type: Integer
+    RTC_MODE2_PRESCALER:
+      attributes:
+        id: RTC_MODE2_PRESCALER
+        label: RTC Prescaler
+      type: KeyValueSet
+    RTC_MODE2_REFERENCE_YEAR:
+      attributes:
+        id: RTC_MODE2_REFERENCE_YEAR
+        label: Reference Year(Leap Year)
+      type: Integer
+    RTC_MODULE_SELECTION:
+      attributes:
+        id: RTC_MODULE_SELECTION
+        label: RTC Operation Mode
+      type: KeyValueSet
+    SYS_TIME_COMPONENT_ID:
+      attributes:
+        id: SYS_TIME_COMPONENT_ID
+        label: Component id
+      type: String
+    SYS_TIME_PLIB_OPERATION_MODE:
+      attributes:
+        id: SYS_TIME_PLIB_OPERATION_MODE
+        label: SysTime PLIB Operation Mode
+      type: String
+    SYS_TIME_TICK_RATE_MS:
+      attributes:
+        id: SYS_TIME_TICK_RATE_MS
+        label: SYS_TIME_TICK_RATE_MS
+      type: Float
+  userData: {}

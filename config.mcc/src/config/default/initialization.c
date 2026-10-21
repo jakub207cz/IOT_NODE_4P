@@ -151,6 +151,8 @@ void SYS_Initialize ( void* data )
 
     NVMCTRL_REGS->NVMCTRL_CTRLB = NVMCTRL_CTRLB_RWS(3U);
 
+    PM_Initialize();
+
     STDIO_BufferModeSet();
 
 
@@ -164,11 +166,15 @@ void SYS_Initialize ( void* data )
 
     NVMCTRL_Initialize( );
 
+    SERCOM2_SPI_Initialize();
+
     SERCOM1_USART_Initialize();
+
+    SERCOM0_I2C_Initialize();
 
     EVSYS_Initialize();
 
-    SERCOM0_I2C_Initialize();
+    RTC_Initialize();
 
 
     NVIC_Initialize();
